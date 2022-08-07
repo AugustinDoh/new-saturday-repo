@@ -2,12 +2,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: Voting-app-service
+  name: voting-app-deployment-service
 spec:
-  type: loadBalancer
+  type: LoadBalancer
   ports:
     - targetPort: 80
       port: 80
   selector:
-    name: Voting-app-deeployment
-...
+    name: voting-app-deployment

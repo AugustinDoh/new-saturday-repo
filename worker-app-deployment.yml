@@ -13,11 +13,16 @@ spec:
       name: worker-app-deployment
   template:
     metadata:
-      name: worker-app
+      name: worker-pod
       labels:
         name: worker-app-deployment
     spec:
       containers:
-        - name: worker
+        - name: worker-app
           image: dockersamples/examplevotingapp_worker
-...
+
+
+
+
+
+
